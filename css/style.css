@@ -1,0 +1,46 @@
+.boxStatic {
+    background-color: aquamarine;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* position is for moving everything (top), margin is for each individual element space */
+.boxRelative {
+    position:relative;
+    background-color: lightcoral;
+    top: 10px;
+    left: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* Absolute Styling Section. 
+Absolute must be in a relative box. Relative must exist to be able to use absolute*/
+
+.container {
+    /* This makes container a "positioned ancestor" */
+    position: relative;
+    height: 200px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.boxAbsolute {
+    position: absolute;
+    background-color: pink;
+    top: 50px;
+    left: 50px;
+    padding: 20px;
+}
+
+/* Fixed Styling. It stays still */
+
+.boxFixed {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: lightblue;
+    padding: 10px;
+    /* elements that need to be overlapped, use z-index: 1; 1 means on top and 2 would be under 1 when you scroll */
+    z-index: 1;
+}
